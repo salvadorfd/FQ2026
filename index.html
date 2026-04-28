@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Visualizador de Ejercicios</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="app">
+			<section id="pantalla-inicio" class="screen active">
+				<div class="card">
+					<h1>Fisico Química 2026</h1>
+					<p class="subtitle">Practicá para el examen!!</p>
+
+					<div class="entry-actions entry-actions-single">
+						<button id="btn-ir-ejercicios" class="btn btn-primary" type="button">
+							Ejercicios
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="pantalla-menu-ejercicios" class="screen">
+				<div class="card">
+					<div class="screen-top">
+						<button id="btn-inicio-desde-menu-ejercicios" class="btn btn-back" type="button">
+							Inicio
+						</button>
+					</div>
+					<h1>Ejercicios</h1>
+					<p class="subtitle">Elegí cómo querés trabajar los ejercicios.</p>
+
+					<div class="entry-actions">
+						<button id="btn-practicar-ejercicios" class="btn btn-primary" type="button">
+							Practicar
+						</button>
+						<button id="btn-lista-ejercicios" class="btn btn-secondary" type="button">
+							Lista de Ejercicios
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="pantalla-buscador" class="screen">
+				<div class="card">
+					<div class="screen-top">
+						<button id="btn-inicio-desde-ej-buscador" class="btn btn-back" type="button">
+							Volver
+						</button>
+					</div>
+					<h1>Un Ejercicio al Azar</h1>
+					<p class="subtitle">Elegí un tema y una dificultad para comenzar.</p>
+
+					<form id="filtro-form" class="form-grid">
+						<label for="tema">Tema</label>
+						<select id="tema" required></select>
+
+						<label for="dificultad">Dificultad</label>
+						<select id="dificultad" required></select>
+
+						<button type="submit" class="btn btn-primary">Comenzar</button>
+					</form>
+
+					<p id="busqueda-error" class="error" aria-live="polite"></p>
+				</div>
+			</section>
+
+			<section id="pantalla-ejercicio" class="screen">
+				<div class="exercise-wrap">
+					<div class="exercise-top">
+						<button id="btn-volver" class="btn btn-back" type="button">Volver</button>
+					</div>
+					<h2 id="titulo-ejercicio" class="exercise-title"></h2>
+					<p id="meta-ejercicio" class="exercise-meta"></p>
+					<div id="enunciado" class="statement"></div>
+					<div id="galeria-ejercicio" class="exercise-gallery" aria-live="polite"></div>
+					<div id="respuesta" class="answer" hidden></div>
+
+					<div class="controls">
+						<button id="btn-respuesta" class="btn btn-secondary" type="button">Ver respuesta</button>
+						<button id="btn-siguiente" class="btn btn-primary" type="button">Siguiente</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="pantalla-lista-ejercicios" class="screen">
+				<div class="card">
+					<div class="screen-top">
+						<button id="btn-volver-desde-lista-ejercicios" class="btn btn-back" type="button">
+							Volver
+						</button>
+					</div>
+					<h1>Lista de ejercicios</h1>
+					<p class="subtitle">Todos los ejercicios agrupados por tema y numerados.</p>
+
+					<div class="list-filter-wrap">
+						<label for="tema-lista-ejercicios">Tema</label>
+						<select id="tema-lista-ejercicios" aria-label="Filtrar lista de ejercicios por tema"></select>
+					</div>
+
+					<div id="lista-ejercicios-contenido" class="exercise-list-groups"></div>
+				</div>
+			</section>
+
+		</main>
+
+		<script src="ejercicios.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
