@@ -75,7 +75,10 @@ const EJERCICIOS = [
     enunciado: `<p>Para los siguientes &aacute;tomos indicar cuales son <strong>is&oacute;topos, is&oacute;tonos, is&oacute;baros e isoelectr&oacute;nicos</strong> entre s&iacute;.</p>
 <p><sup>20</sup>Ne ; <sup>22</sup>Ne ; <sup>23</sup>Na<sup>+</sup> ; <sup>19</sup>F<sup>-</sup> ;<sup> 24</sup>Mg<sup>2+</sup> ; <sup>22</sup>Na</p>`,
     imagenes: "",
-    respuesta: `-`
+    respuesta: `<p><strong>Isoelectr&oacute;nicos: </strong>[<strong>&nbsp;</strong><sup>20</sup>Ne ; <sup>22</sup>Ne&nbsp;; <sup>23</sup>Na<sup>+</sup>&nbsp;;&nbsp;<sup>19</sup>F<sup>-</sup>&nbsp;;&nbsp;<sup>24</sup>Mg<sup>2+</sup> ]</p>
+<p><strong>Is&oacute;topos: </strong>[<strong>&nbsp;</strong><sup>20</sup>Ne ;&nbsp;<sup>22</sup>Ne&nbsp;]<strong>&nbsp;</strong> ;&nbsp;&nbsp;[ <sup>23</sup>Na<sup>+</sup>&nbsp;;&nbsp;<sup>22</sup>Na ]</p>
+<p><strong>Is&oacute;baros:</strong>&nbsp;[<strong>&nbsp;</strong><sup>22</sup>Ne ;&nbsp;<sup>22</sup>Na ]</p>
+<p><strong>Is&oacute;tonos: </strong>[<strong><strong>&nbsp;</strong></strong><sup>20</sup>Ne ; <sup>19</sup>F<sup>-</sup>&nbsp;]&nbsp; ;&nbsp;&nbsp;[ <sup>22</sup>Ne&nbsp;; <sup>23</sup>Na<sup>+</sup>&nbsp;; <sup>24</sup>Mg<sup>2+</sup>&nbsp;]</p>`
   },
 
 
@@ -87,7 +90,10 @@ const EJERCICIOS = [
     enunciado: `<p>Para los siguientes &aacute;tomos indicar cuales son <strong>is&oacute;topos, is&oacute;tonos, is&oacute;baros e isoelectr&oacute;nicos</strong> entre s&iacute;.</p>
 <p><sup>56</sup>Fe<sup>2+</sup> ; <sup>58</sup>Fe ; <sup>58</sup>Ni<sup>2+</sup> ; <sup>57</sup>Fe ; <sup>60</sup>Ni ; <sup>56</sup>Mn</p>`,
     imagenes: "",
-    respuesta: `-`
+    respuesta: `<p><strong>Isoelectr&oacute;nicos: </strong>[<strong>&nbsp;</strong><sup>58</sup>Fe ; <sup>58</sup>Ni<sup>2+</sup> ; <sup>57</sup>Fe&nbsp;]</p>
+<p><strong>Is&oacute;topos: </strong>[<strong>&nbsp;</strong><sup>58</sup>Fe ;&nbsp;<sup>56</sup>Fe<sup>2+</sup>&nbsp;; <sup>57</sup>Fe]<strong>&nbsp;</strong> ;&nbsp;&nbsp;[ <sup>58</sup>Ni<sup>2+</sup>&nbsp;;&nbsp;<sup>60</sup>Ni ]</p>
+<p><strong>Is&oacute;baros:</strong>&nbsp;[ <sup>56</sup>Fe<sup>2+</sup>&nbsp;; <sup>56</sup>Mn&nbsp;]&nbsp; ;&nbsp;&nbsp;[ <sup>58</sup>Fe&nbsp;; <sup>58</sup>Ni<sup>2+</sup>&nbsp;]</p>
+<p><strong>Is&oacute;tonos:&nbsp;</strong>[ <sup>56</sup>Fe<sup>2+</sup>&nbsp;; <sup>58</sup>Ni<sup>2+</sup>&nbsp;]&nbsp; ;&nbsp;&nbsp;[ <sup>58</sup>Fe&nbsp;; <sup>60</sup>Ni&nbsp;]&nbsp; ;&nbsp;&nbsp;[&nbsp;<sup>57</sup>Fe&nbsp;; <sup>56</sup>Mn&nbsp;]</p>`
   },
 
 
@@ -545,7 +551,11 @@ const EJERCICIOS = [
 <li>Escribir los 4 n&uacute;meros cu&aacute;nticos del ante&uacute;ltimo electr&oacute;n del ani&oacute;n trivalente del f&oacute;sforo.</li>
 </ul>`,
     imagenes: "",
-    respuesta: "-"
+    respuesta: `<ul>
+<li><strong>n =</strong> 4&nbsp; <strong>l =</strong> 1&nbsp; <strong>m =</strong> 0&nbsp; <strong>s =</strong> -1/2</li>
+<li><strong>n =</strong> 5&nbsp; <strong>l =</strong> 1&nbsp; <strong>m =</strong> 1&nbsp; <strong>s =</strong> -1/2</li>
+<li><strong>n =</strong> 3&nbsp; <strong>l =</strong> 1&nbsp; <strong>m =</strong> 0&nbsp; <strong>s =</strong> -1/2</li>
+</ul>`
   },
 
 
@@ -554,7 +564,7 @@ const EJERCICIOS = [
     numero: "1.25",
     tema: "NV1 - Modelo Atómico",
     dificultad: "Difícil",
-    enunciado: `<p><span style="font-weight: 400;">Una mol&eacute;cula estructurada como&nbsp;&nbsp;</span><strong>X(YZ<sub>3</sub></strong><span style="font-weight: 400;"><strong>)</strong>&nbsp;</span><span style="font-weight: 400;"> tiene <strong>50 electrones en total.&nbsp;</strong></span></p>
+    enunciado: `<p><span style="font-weight: 400;">Una mol&eacute;cula estructurada como&nbsp;&nbsp;</span><strong>XYZ<sub>3</sub></strong><span style="font-weight: 400;"><strong></strong>&nbsp;</span><span style="font-weight: 400;"> tiene <strong>50 electrones en total.&nbsp;</strong></span></p>
 <ul style="list-style-type: square;">
 <li><span style="font-weight: 400;">Los n&uacute;meros cu&aacute;nticos del ante&uacute;ltimo electr&oacute;n del &aacute;tomo Y son: n = 2&nbsp; &nbsp; l = 1&nbsp; &nbsp; m = -1&nbsp; &nbsp; s = &frac12;<br />&nbsp;</span></li>
 <li>El &aacute;tomo Z posee dos protones m&aacute;s en su n&uacute;cleo respecto del &aacute;tomo Y.</li>
@@ -562,7 +572,22 @@ const EJERCICIOS = [
 <p>&nbsp;</p>
 <p><strong>Calcular</strong><span style="font-weight: 400;"> cu&aacute;ntos electrones debe tener el &aacute;tomo X, escribir su C.E. y los n&uacute;meros cu&aacute;nticos de su &uacute;ltimo electr&oacute;n. </span></p>`,
     imagenes: "",
-    respuesta: "-"
+    respuesta: `<p><span style="text-decoration: underline;"><strong>Y</strong></span></p>
+<p><strong>C.E. =&nbsp;</strong>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup></p>
+<p>Carbono (6 electrones ; 6 protones)</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>Z</strong></span></p>
+<p><strong>C.E. =&nbsp;</strong>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup></p>
+<p>Ox&iacute;geno&nbsp;(8 electrones ; 8 protones)</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>X</strong></span></p>
+<p><strong>C.E. =&nbsp;</strong>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup></p>
+<p>Calcio&nbsp;(20 electrones ; 20 protones)</p>
+<p>n = 4&nbsp; &nbsp;l = 0&nbsp; &nbsp;m = 0&nbsp; &nbsp;s = -1/2</p>
+<p>&nbsp;</p>
+<p><strong>Mol&eacute;cula Completa</strong></p>
+<p>CaCO<sub>3</sub></p>
+<p>Carbonato de Calcio</p>`
   },
 
 
@@ -571,7 +596,7 @@ const EJERCICIOS = [
     numero: "1.26",
     tema: "NV1 - Modelo Atómico",
     dificultad: "Difícil",
-    enunciado: `<p>Una mol&eacute;cula estructurada como&nbsp; &nbsp;<strong>X(YZ<sub>4</sub>)</strong>&nbsp; &nbsp;tiene <strong>126 electrones en total.</strong></p>
+    enunciado: `<p>Una mol&eacute;cula estructurada como&nbsp; &nbsp;<strong>XYZ<sub>4</sub></strong>&nbsp; &nbsp;tiene <strong>126 electrones en total.</strong></p>
 <ul style="list-style-type: square;">
 <li>El &aacute;tomo Y en estado neutro, posee 110 neutrones en su n&uacute;cleo y 184 g/mol de masa at&oacute;mica.<br /><br /></li>
 <li>El &aacute;tomo Z posee 66 protones menos que Y en su n&uacute;cleo.</li>
@@ -579,7 +604,22 @@ const EJERCICIOS = [
 <p>&nbsp;</p>
 <p><strong>Calcular</strong> cu&aacute;ntos electrones debe tener el &aacute;tomo X, escribir su C.E. y los n&uacute;meros cu&aacute;nticos de su &uacute;ltimo electr&oacute;n.</p>`,
     imagenes: "",
-    respuesta: "-"
+    respuesta: `<p><span style="text-decoration: underline;"><strong>Y</strong></span></p>
+<p><strong>A:&nbsp;</strong>184&nbsp; &nbsp;<strong>N:</strong> 110&nbsp; &nbsp;<strong>Z:&nbsp;</strong>74</p>
+<p>Wolframio&nbsp;(74 electrones&nbsp;;&nbsp;74 protones)</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>Z</strong></span></p>
+<p><strong>Z:&nbsp;</strong>8</p>
+<p>Ox&iacute;geno&nbsp;(8 electrones ; 8 protones)</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>X</strong></span></p>
+<p><strong>C.E. =&nbsp;</strong>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup></p>
+<p>Calcio&nbsp;(20 electrones ; 20 protones)</p>
+<p>n = 4&nbsp; &nbsp;l = 0&nbsp; &nbsp;m = 0&nbsp; &nbsp;s = -1/2</p>
+<p>&nbsp;</p>
+<p><strong>Mol&eacute;cula Completa</strong></p>
+<p>CaWO<sub>3</sub></p>
+<p>Wolframato de Calcio</p>`
   },
 
 
@@ -588,7 +628,7 @@ const EJERCICIOS = [
     numero: "1.27",
     tema: "NV1 - Modelo Atómico",
     dificultad: "Difícil",
-    enunciado: `<p><span style="font-weight: 400;">Una mol&eacute;cula estructurada como&nbsp; &nbsp;</span><strong>X<sub>2</sub>(YZ<sub>4</sub></strong><span style="font-weight: 400;"><strong>)</strong>&nbsp;&nbsp;</span><span style="font-weight: 400;"> tiene <strong>158 electrones en total.</strong></span></p>
+    enunciado: `<p><span style="font-weight: 400;">Una mol&eacute;cula estructurada como&nbsp; &nbsp;</span><strong>X<sub>2</sub>YZ<sub>4</sub></strong><span style="font-weight: 400;"><strong></strong>&nbsp;&nbsp;</span><span style="font-weight: 400;"> tiene <strong>158 electrones en total.</strong></span></p>
 <ul style="list-style-type: square;">
 <li><span style="font-weight: 400;">Los n&uacute;meros cu&aacute;nticos del ante&uacute;ltimo electr&oacute;n del &aacute;tomo Y son: n = 3&nbsp; &nbsp; l = 1&nbsp; &nbsp; m = 1&nbsp; &nbsp; s = &frac12;<br />&nbsp;</span></li>
 <li>El &aacute;tomo Z se encuentra en el mismo grupo que el &aacute;tomo Y, pero un per&iacute;odo menos.&nbsp;</li>
@@ -596,7 +636,21 @@ const EJERCICIOS = [
 <p>&nbsp;</p>
 <p><strong>Calcular</strong><span style="font-weight: 400;"> cu&aacute;ntos electrones debe tener el &aacute;tomo X, escribir su C.E. y los n&uacute;meros cu&aacute;nticos de su &uacute;ltimo electr&oacute;n.</span></p>`,
     imagenes: "",
-    respuesta: "-"
+    respuesta: `<p><span style="text-decoration: underline;"><strong>Y</strong></span></p>
+<p><strong>C.E:</strong> 1s<sup>2</sup>&nbsp;2s<sup>2</sup>&nbsp;2p<sup>6</sup>&nbsp;3s<sup>2</sup>&nbsp;3p<sup>4</sup>&nbsp;</p>
+<p>Azufre&nbsp;(16 electrones&nbsp;;&nbsp;16 protones)</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>Z</strong></span></p>
+<p>Ox&iacute;geno&nbsp;(8 electrones ; 8 protones)</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>X</strong></span></p>
+<p><strong>C.E. =&nbsp;</strong>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2&nbsp;</sup>3d<sup>10&nbsp;</sup>4p<sup>6&nbsp;</sup>5s<sup>2&nbsp;</sup>4d<sup>10&nbsp;</sup>5p<sup>6</sup><sup>&nbsp;</sup>6s<sup>1</sup></p>
+<p>Cesio&nbsp;(55 electrones ;&nbsp;55 protones)</p>
+<p>n = 6&nbsp; &nbsp;l = 0&nbsp; &nbsp;m = 0&nbsp; &nbsp;s = 1/2</p>
+<p>&nbsp;</p>
+<p><strong>Mol&eacute;cula Completa</strong></p>
+<p>Cs<sub>2</sub>SO<sub>4</sub></p>
+<p>Sulfato de Cesio</p>`
   },
 
 
@@ -611,7 +665,9 @@ const EJERCICIOS = [
 <li>Utilizando la tabla peri&oacute;dica, indicar de qu&eacute; &aacute;tomo se trata en cada caso</li>
 </ul>`,
     imagenes: ["assets/ejercicios/NV1 - Modelo Atómico/1.29(1).png","assets/ejercicios/NV1 - Modelo Atómico/1.29(2).png"],
-    respuesta: "-"
+    respuesta: `<p>Son &aacute;tomos is&oacute;baros (mismo A)</p>
+<p>Izquierda: <sup>12</sup>C (carbono)</p>
+<p>Derecha: <sup>12</sup>N (nitr&oacute;geno)</p>`
   },
 
 
